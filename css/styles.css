@@ -550,7 +550,7 @@ background: #F5F4FA;
 .mail-form:hover,
 .mail-form:focus {
 border: 1px solid var(--accent-color);
-    
+color: var(--main-bg-color);    
 }
 
 .sign-btn {

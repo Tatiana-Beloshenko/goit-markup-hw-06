@@ -123,7 +123,7 @@ p {
     content: "";
     position: absolute;
     width: 100%;
-    bottom: -3px;
+    bottom: -1px;
     border-bottom: 4px solid var(--accent-color);
     border-radius: 2px;
 }
@@ -430,16 +430,17 @@ background: #F5F4FA;
 /* цвет фона футера и цвет логотипа*/
 .footer {
     display: flex;
+    padding: 60px 0;
     background: #2F303A;
     ;
 }
 .footer .itemadres + .itemadres {
     margin-left: 70px;
 }
-.footer-adres {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.footer-container {
+    align-items: baseline;
 }
+
 .logotip {
     margin-bottom: 20px;
 }
@@ -468,10 +469,7 @@ background: #F5F4FA;
 .adres-link:focus {
     color: var(--accent-color);
 }
-.socialnetadres {
-    padding-top: 75px;
-    padding-bottom: 97px;
-}
+ 
 .join-title {
     margin-top: 0;
     margin-bottom: 20px;
@@ -510,8 +508,6 @@ background: #F5F4FA;
     fill:var(--main-bg-color);
 }
 .subscribe {
-    padding-top: 72px;
-    padding-bottom: 94px;
     margin-left: 93px;
 }
 .block-form {
@@ -528,15 +524,23 @@ background: #F5F4FA;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.mail-label {
+
+.mail-form::placeholder {
     position: absolute;
     top: 50%;
-    left: 16px;
     transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+
 }
 .mail-form {
     width: 358px;
     height: 50px;
+    padding-left: 16px;
     margin-right: 12px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -548,10 +552,7 @@ background: #F5F4FA;
 border: 1px solid var(--accent-color);
     
 }
-.mail-form:hover + .mail-label,
-.mail-form:focus + .mail-label {
-    color: var(--accent-color);
-}
+
 .sign-btn {
     display: flex;
     justify-content: center;
